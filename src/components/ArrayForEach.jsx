@@ -1,16 +1,16 @@
 const ArrayForEach = ({nameList}) =>{
 
+    const newNameList = [];
+    nameList.forEach((name,index)=>{
+        newNameList.push(<li key={index}>{name}</li>);
+    });
+
     
     return(
         <div>
-            <h1>Filtered Name List(Map)</h1>
+            <h1>Full name list(ForEach)</h1>
             <ul>
-                {nameList.forEach((name,index)=>{
-                        return(
-                            <li key={index}>{name}</li>
-                        )
-                    })
-                }
+                {newNameList}
             </ul>
 
         </div>

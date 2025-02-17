@@ -29,7 +29,7 @@ function App() {
         <ArrayMap nameList={names}/>  
         <ArrayFilter nameList={names}/>
         <ArrayReduce numberList={numbers}/>    
-        <ArrayForEach nameList={numbers}/>  
+        <ArrayForEach nameList={names}/>  
       </header>
     </div>
   );

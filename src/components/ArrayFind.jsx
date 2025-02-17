@@ -1,17 +1,21 @@
-const ArrayFind = ({nameList}) =>{
+const ArrayFind = ({numberist,numberList}) =>{
 
-    const newNameList = [];
-    nameList.forEach((name,index)=>{
-        newNameList.push(<li key={index}>{name}</li>);
-    });
+    const max = numberList.find((num)=>(num>5));
 
-    
+   
     return(
         <div>
-            <h1>Full name list(ForEach)</h1>
-            <ul>
-                {newNameList}
-            </ul>
+            <h1>First Number - Greater than 5 (Find)</h1>
+            <table border={1} cellPadding={5}>
+                <tr>
+                {numberList.map((num,index)=>(
+                    <td align="center" key={index}>{num}</td>
+                    ))}
+                </tr>
+            </table>
+            <hr/>
+            <p>{max}</p>
+            
 
         </div>
     );

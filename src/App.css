@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -18,10 +18,13 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: baseline;
+  justify-content: baseline;
   font-size: calc(10px + 2vmin);
   color: white;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom:20vh;
 }
 
 .App-link {

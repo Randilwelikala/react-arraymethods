@@ -1,6 +1,6 @@
 const ArrayFilter = ({nameList}) =>{
 
-    const filteredNames = nameList.filter((name)=>(name.startsWith('A')));
+    const filteredNames = nameList.filter((name)=>(name.toLowerCase().startsWith('a')));
     return(
         <div>
             <h1>Filtered Name List(Map)</h1>

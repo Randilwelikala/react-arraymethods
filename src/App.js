@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import ArrayMap from './components/ArrayMap';
 import ArrayFilter from './components/ArrayFilter';
 import ArrayReduce from './components/ArrayReduce';
+import ArrayForEach from './components/ArrayForEach';
 import './App.css';
 
 const names = [
@@ -27,7 +28,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <ArrayMap nameList={names}/>  
         <ArrayFilter nameList={names}/>
-        <ArrayReduce numberList={numbers}/>      
+        <ArrayReduce numberList={numbers}/>    
+        <ArrayForEach nameList={numbers}/>  
       </header>
     </div>
   );

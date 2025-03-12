@@ -31,7 +31,7 @@ function App() {
         <ArrayFilter nameList={names}/>
         <ArrayReduce numberList={numbers}/>    
         <ArrayForEach nameList={names}/>  
-        <ArrayFind numberList={numbers}/>
+        <ArrayFind numberList={numbers} nameList={names}/>
       </header>
     </div>
   );

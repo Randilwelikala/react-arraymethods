@@ -2,7 +2,7 @@ const ArrayFlatMap = ({nameList}) => {
     // const newNameList= [...nameList.slice(0,3),[nameList[3],nameList[4],nameList.slice(5,nameList.length)]];
 
     var arr1= nameList.map((name)=>(name.split('')));
-    var arr2= nameList.map((name)=>(name.split('')));
+    var arr2= nameList.flatMap((name)=>(name.split('')));
    
     return(
         <div>

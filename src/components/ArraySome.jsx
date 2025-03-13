@@ -1,4 +1,7 @@
 const ArraySome = ({nameList}) => {
+
+    const letter = 'r';
+    const status = nameList.some((name)=>(name.includes(letter)))
     return(
         <div>
             <h1>Some Method</h1>
@@ -11,6 +14,7 @@ const ArraySome = ({nameList}) => {
                     </tr>
                 ))}
             </table>
+            <p>{status?"Yes":"No"}</p>
 
         </div>
     )

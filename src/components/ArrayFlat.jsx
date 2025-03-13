@@ -2,64 +2,38 @@ const ArrayFlat = ({nameList}) => {
     const newNameList= [...nameList.slice(0,3),[nameList[3],nameList[4],nameList.slice(5,nameList.length)]];
 
     var arr1= newNameList.flat();
-    var arr2= newNameList.flat();
+    var arr2= newNameList.flat(2);
    
     return(
         <div>
             <h1>Array Flat</h1>
 
-            <h3>Original Name List</h3>           
+            <h3>Original Nested Array</h3>           
             
-            <table border={1} cellPadding={5} >
-
-                
+            <table border={1} cellPadding={5} >                
                     <tr>
                         <td>
-                            {JSON.stringify(newNameList)}
-                            
-                        </td>
-                        
-                    </tr>
-                
+                            {JSON.stringify(newNameList)};                           
+                        </td>                        
+                    </tr>                
             </table>
 
             <h2>Array 01</h2>
 
-            <table border={1} cellPadding={5} >
-
-                {nameList.map((name,index)=>(
+            <table border={1} cellPadding={5} >                
                     <tr>
-                         {JSON.stringify(newNameList)}
-                        
-                    </tr>
-                ))}
-            </table>
-
-             <h2>Array 01</h2>
-
-            <table border={1} cellPadding={5} >
-
-                {nameList.map((name,index)=>(
-                    <tr>
-                         {JSON.stringify(arr1)}
-                        
-                    </tr>
-                ))}
-            </table>
-
-            <h2>Array 02</h2>
-
-            <table border={1} cellPadding={5} >
-
-                {nameList.map((name,index)=>(
-                    <tr>
-                         {JSON.stringify(arr2)}
-                        
-                    </tr>
-                ))}
-            </table>
+                         {JSON.stringify(arr1)};                      
+                    </tr>                
+            </table>            
 
             
+            <h2>Array 02</h2>
+
+            <table border={1} cellPadding={5} >                
+                    <tr>
+                         {JSON.stringify(arr2)};                        
+                    </tr>                
+            </table>        
 
             
            

@@ -3,7 +3,7 @@ const ArraySplice = ({nameList}) => {
     var arr2=[...nameList];
 
     arr1.splice(3,0,"Between Charlie and David");
-    arr2.splice(3,2,"Test");
+    arr2.splice(3,2,"Replace David , Eve");
     // const arr2 = nameList.slice(3,nameList.length);
 
 

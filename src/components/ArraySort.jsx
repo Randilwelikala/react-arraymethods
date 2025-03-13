@@ -1,7 +1,7 @@
 const ArraySort = ({nameList}) => {
 
     const x = "Bob".localeCompare("Alice");
-    const SortedNames = nameList.sort((a,b)=>(b.localeCompare(a)))
+    const SortedNames = [...nameList].sort((a,b)=>(b.localeCompare(a)))
     return(
         <div>
             <h1>Array Sort = {x} </h1>

@@ -9,6 +9,7 @@ import ArrayFindIndex from './components/ArrayFindIndex';
 import ArraySome from './components/ArraySome';
 import ArrayEvery from './components/ArrayEvery';
 import ArraySort from './components/ArraySort';
+import ArraySlice from './components/ArraySlice';
 
 
 const names = [
@@ -41,6 +42,7 @@ function App() {
         <ArraySome nameList={names}/>
         <ArrayEvery nameList={names}/>
         <ArraySort nameList={names} />
+        <ArraySlice nameList = {names}/>
       </header>
     </div>
   );

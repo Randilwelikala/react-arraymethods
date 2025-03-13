@@ -1,11 +1,14 @@
 const ArraySlice = ({nameList}) => {
+    const arr1=nameList.slice(2,4)
+    const arr2 = nameList.slice(3,nameList.length);
 
-    const x = "Bob".localeCompare("Alice");
-    // const SortedNames = [...nameList].sort((a,b)=>(b.localeCompare(a)))
-    const SortedNames = [...nameList].sort((a,b)=>(a.length - b.length))
+
     return(
         <div>
-            <h1>Array Sort = {x} </h1>
+            <h1>Slice Name Array to two Arrays(Slice)</h1>
+
+            <h3>Original Name List</h3>
+            
             <table border={1} cellPadding={5} >
 
                 {nameList.map((name,index)=>(
@@ -15,11 +18,23 @@ const ArraySlice = ({nameList}) => {
                     </tr>
                 ))}
             </table>
-            <h2>Sorted array List</h2>
+            <h2>Array 01</h2>
 
             <table border={1} cellPadding={5} >
 
-                {SortedNames.map((name,index)=>(
+                {arr1.map((name,index)=>(
+                    <tr>
+                        <td key={index}>{index}</td>
+                        <td key={name}>{name}</td>
+                    </tr>
+                ))}
+            </table>
+
+            <h2>Array 02</h2>
+
+            <table border={1} cellPadding={5} >
+
+                {arr2.map((name,index)=>(
                     <tr>
                         <td key={index}>{index}</td>
                         <td key={name}>{name}</td>

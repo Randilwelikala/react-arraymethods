@@ -1,7 +1,7 @@
-const ArraySome = ({nameList}) => {
+const ArrayEvery = ({nameList}) => {
 
     const letter = 'r';
-    const status = nameList.some((name)=>(name.includes(letter)))
+    const status = nameList.every((name)=>(name.includes(letter)))
     return(
         <div>
             <h1>Check if any name includes '{letter}'</h1>
@@ -22,4 +22,4 @@ const ArraySome = ({nameList}) => {
 
 }
 
-export default ArraySome;
+export default ArrayEvery;

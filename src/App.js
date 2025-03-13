@@ -7,6 +7,7 @@ import ArrayFind from './components/ArrayFind';
 import './App.css';
 import ArrayFindIndex from './components/ArrayFindIndex';
 import ArraySome from './components/ArraySome';
+import ArrayEvery from './components/ArrayEvery';
 
 
 const names = [
@@ -37,6 +38,7 @@ function App() {
         <ArrayFind numberList={numbers} nameList={names}/>
         <ArrayFindIndex nameList ={names}/>
         <ArraySome nameList={names}/>
+        <ArrayEvery nameList={names}/>
       </header>
     </div>
   );

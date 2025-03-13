@@ -1,6 +1,6 @@
 const ArrayEvery = ({nameList}) => {
 
-    const letter = 'r';
+    const letter = 'A';
     const status = nameList.every((name)=>(name.includes(letter)))
     return(
         <div>

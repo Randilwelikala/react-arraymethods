@@ -13,7 +13,7 @@ import ArraySort from './components/ArraySort';
 
 const names = [
   "Alice",
-  "BOb",
+  "Bob",
   "Charlie",
   "David",
   "Eve",
